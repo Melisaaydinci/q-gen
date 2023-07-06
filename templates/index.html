@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+</head>
+<body>
+    <h1>Koc Listesi</h1>
+    <ul>
+        {% for info in users %}
+            <li>{{ info }}</li>
+        {% endfor %}
+    </ul>
+    <h1>Ogrenci Listesi</h1>
+    <ul>
+        {% for info in users2 %}
+            <li>{{ info }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
