@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/ders.css">
+</head>
+<body>
+  <header class="bg-transparent text-white py-3 sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <img src="/static/img/logo.png" alt="Qgen Logo" class="logo-img">
+      </div>
+      <h1 class="title">Qgen</h1>
+    </div>
+  </header>
+
+  <div class="container content text-white">
+    <div class="jumbotron bg-info" id="course-jumbotron">
+      <h2 class=" d-flex justify-content-center ">Ders seçiniz</h2>
+      <div class="btn-container">
+        <form method="POST" action="">
+          <button type="submit" name = "ders_select" value="matematik" class="btn btn-primary btn-course" data-course-id="Matematik">Matematik</button>
+        </form>        
+        <form method="POST" action="">
+          <button type="submit" name = "ders_select" value="türkçe" class="btn btn-primary btn-course" data-course-id="Türkçe">Türkçe</button>
+        </form>  
+      </div>
+    </div>
+
+    <div class="jumbotron bg-info" id="topic-jumbotron-Matematik" style="display: none;">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Bir konu seç</h2>
+        <button class="btn btn-secondary btn-back">Geri git</button>
+      </div>
+
+      <div class="topic-list-container">
+        <ul class="topic-list">
+          <li>
+            <input type="radio" name="topic" id="topicA" checked>
+            <label for="topicA">Konu_1</label>
+          </li>
+          <li>
+            <input type="radio" name="topic" id="topicB">
+            <label for="topicB">Konu_2</label>
+          </li>
+        </ul>
+      </div>
+        <button class="btn btn-primary btn-topic " style="display: none;">Derse başla</button>
+    </div>
+
+    <div class="jumbotron bg-info" id="topic-jumbotron-Türkçe" style="display: none;">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Bir konu seç</h2>
+        <button class="btn btn-secondary btn-back_2">Geri git</button>
+      </div>
+
+      <div class="topic-list-container">
+        <ul class="topic-list">
+          <li>
+            <input type="radio" name="topic_2" id="topicA" checked>
+            <label for="topicA">Konu_1</label>
+          </li>
+          <li>
+            <input type="radio" name="topic_2" id="topicB">
+            <label for="topicB">Konu_2</label>
+          </li>
+        </ul>
+      </div>
+      <button class="btn btn-primary btn-topic_2 " style="display: none;">Derse başla</button>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>© 2023 Qgen. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

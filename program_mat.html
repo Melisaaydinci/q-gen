@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/program.css">
+</head> 
+<body>
+  <header class="bg-transparent text-white py-3 sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <img src="/static/img/logo.png" alt="Qgen Logo" class="logo-img">
+      </div>
+      <h1 class="title">Qgen</h1>
+    </div>
+  </header>
+
+  <div class="container content text-white">
+    
+    <div class="jumbotron bg-info" id="topic-jumbotron-Matematik" style="display: block;">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Konu seçiniz</h2>
+        <form method="post">
+            <button type= "submit" value="GERİ" name="button_spec" class="btn btn-secondary btn-back_2">Geri git</button>
+        </form>
+      </div>
+      <form method="post">
+        <div class="topic-list-container mt-5">
+          <ul class="topic-list">
+            <li>
+              <input value = "polinom" type="checkbox" name="topic" id="topicA">
+              <label for="topicA">Polinomlar</label>
+            </li>
+            <li>
+              <input value = "türev" type="checkbox" name="topic" id="topicB">
+              <label for="topicB">Türev</label>
+            </li>
+          </ul>
+        </div>
+        <button type = "submit" class="btn btn-primary btn-topic " style="display: block;">Derse başla</button>
+      </form>
+    </div>
+    
+ 
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
