@@ -8,7 +8,7 @@ db_host = 'localhost'
 db_port = '5432'
 db_name = 'q-gen'
 db_user = 'postgres'
-db_password = 'melisa33'
+db_password = 'yourpassword'
 
 # PostgreSQL veritabanına bağlantı kurun
 conn = psycopg2.connect(
