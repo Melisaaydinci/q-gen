@@ -29,8 +29,7 @@ Once you have connected to PostgreSQL and retrieved the data, you can display it
 1. Import the Flask library in your Python script.
 2. Define routes for your Flask application to handle different URLs.
 3. Within each route, render HTML templates and pass the data retrieved from PostgreSQL as context variables.
-4. Use Jinja2 templating engine to dynamically render the data within HTML templates.
-5. Run the Flask application using the `run()` method.
+4. Run the Flask application using the `run()` method.
 
 ## Running the Demo
 
